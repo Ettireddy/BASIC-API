@@ -1,2 +1,2 @@
 # BASIC-API
-basic api application
+basic api
