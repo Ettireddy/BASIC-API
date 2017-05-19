@@ -1,5 +1,10 @@
 var controllers = [
-    'home'
+    'home',
+    'users',
+    'getUser',
+    'createUser',
+    'updateUser',
+    'deleteUser'
 ];
 
 controllers.forEach( function(controller) {
