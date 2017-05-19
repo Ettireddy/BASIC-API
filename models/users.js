@@ -3,11 +3,13 @@ var mongoose = require('mongoose');
 
 // creating schema
 var userSchema = mongoose.Schema({
-    userId: {
-        type: Number,
-        required: true
-    },
-    name: String
+    FName: String,
+    LName: String,
+    RoleId: Number,
+    SiteId: Number,
+    TenantId: Number,
+    UserName: String,
+    Password: String
 });
 
 // creating a model
