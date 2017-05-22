@@ -1,15 +1,16 @@
 var express = require('express');
 var router = express.Router();
 
-var controllers = require('../controllers');
+var apis = require('../apis');
 var middlewares = require('../middleware');
 
 /* GET home page. */
-router.get('/', middlewares.home, controllers.home);
-router.get('/users', controllers.users);
-router.get('/users/:id', controllers.getUser);
-router.post('/createUser', controllers.createUser);
-router.put('/updateUser/:id', controllers.updateUser);
-router.delete('/deleteUser/:id', controllers.deleteUser);
+router.get('/', middlewares.home, apis.home);
+router.get('/users', apis.users);
+router.get('/users/:id', apis.getUser);
+router.post('/createUser', apis.createUser);
+router.put('/updateUser/:id', apis.updateUser);
+router.delete('/deleteUser/:id', apis.deleteUser);
+router.get('/cluster/:cmd', apis.cluster);
 
 module.exports = router;
