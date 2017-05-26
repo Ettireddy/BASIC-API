@@ -1,4 +1,5 @@
 // require mongoose
+var restful = require('node-restful');
 var mongoose = require('mongoose');
 
 // creating schema
@@ -9,6 +10,6 @@ var siteSchema = mongoose.Schema({
 });
 
 // creating a model
-var Sites = mongoose.model('Site', siteSchema);
+var Sites = restful.model('Site', siteSchema);
 
 module.exports = Sites;
